@@ -2,6 +2,7 @@
 
 * 问题解决方案
   * [Gitea内网代码仓库重启指南](/docs_md/Gitea内网代码仓库重启指南.md) <!--注意这里是相对路径-->
+  * [堡垒机MFA登录失败解决记录](/docs_md/jumpserver堡垒机mfa登录失败/umpServer堡垒机MFA登录失败的解决记录.md)
 * 前端 - 管理后台
 * 前端 - 小程序
 * 后端
