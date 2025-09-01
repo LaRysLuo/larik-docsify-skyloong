@@ -5,6 +5,9 @@
   * [堡垒机MFA登录失败解决记录](/docs_md/jumpserver堡垒机mfa登录失败/umpServer堡垒机MFA登录失败的解决记录.md)
 * 前端 - 管理后台
 * 前端 - 小程序
+* uni-App的yx-ui文档
+  * [yx-form](/docs_md/yx-ui/yx-form.md)
+  * [yx-field](/docs_md/yx-ui/yx-field.md)
 * 后端
   * [mq封装与程序退出资源释放](/docs_md/后端/mq封装与程序退出资源释放/mq封装与程序退出资源释放.md)
 * 老师们看这里！！！
