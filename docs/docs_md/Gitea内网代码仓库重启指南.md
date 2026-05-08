@@ -13,16 +13,52 @@
 2025年7月30日晚发生服务器意外断电，造成 Gitea 服务中断，且 `/usr/local/bin` 目录中的 `gitea` 可执行文件损坏。
 于 7月31日重新下载安装 Gitea，并通过 `nohup ./gitea &` 启动服务恢复运行。
 
+2026年5月8日补充：
+重启后，还是需要手动启动才能启动项目，所以通过设置为系统项目来自动启动。
+具体设置方法见下方附录说明：
+
+现在使用sudo systemctl start gitea来重启gitea
+
 ---
 
-## 二、重启流程说明
+## 二、重启后的操作流程说明
+
+要检查gitea及action_runner是否都重启成功
 
 ### 1. 登录服务器
 
-使用 SSH 登录服务器：
+使用jumpServer堡垒机登录志强120服务器：
+
+---
+
+### 2. 检查gitea是否启动
+使用以下指令检查
+```bash
+sudo systemctl status gitea
+```
+![显示结果](./static/gitea_status.png)
+
+如果出现上方提示，说明启动成功
+
+如果没有启动，使用
+```bash
+sudo systemctl start gitea
+```
+---
+
+### 3. 检查Runner是否启动
 
 ```bash
-ssh user@192.168.2.120
+sudo systemctl status gitea-runner
+```
+![显示结果2](./static/gitea_runner_status.png)
+
+如果出现以上结果，说明启动成功
+
+如果没有启动,使用以下命令来启动
+
+```bash
+sudo systemctl start gitea-runner
 ```
 
 ---
