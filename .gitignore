@@ -13,3 +13,19 @@
 *.out
 
 /.idea
+
+# macOS Finder metadata (all directories)
+.DS_Store
+._*
+.AppleDouble/
+.LSOverride
+.Spotlight-V100/
+.Trashes/
+__MACOSX/
+
+# Windows Explorer thumbnail caches and folder settings
+[Tt]humbs.db
+[Tt]humbs.db:encryptable
+[Ee]hthumbs.db
+[Ee]hthumbs_vista.db
+[Dd]esktop.ini
